@@ -16,7 +16,7 @@ function buttonChoose(button) {
     if (button.target.id === 'rock') {
         playerChoice = 'rock'
         //target and change images
-        $('#playerImage').attr('src', "../rock-paper-scissors/images/rock.png");
+        $('#playerImage').attr('src', "../images/rock.png");
     } else if (button.target.id === 'paper') {
         playerChoice = 'paper'
         $('#playerImage').attr('src', "/images/paper.png");
