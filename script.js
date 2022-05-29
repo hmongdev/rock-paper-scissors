@@ -19,10 +19,10 @@ function buttonChoose(button) {
         $('#playerImage').attr('src', "/rock-paper-scissors/images/rock.png");
     } else if (button.target.id === 'paper') {
         playerChoice = 'paper'
-        $('#playerImage').attr('src', "/images/paper.png");
+        $('#playerImage').attr('src', "/rock-paper-scissors/images/paper.png");
     } else if (button.target.id === 'scissor') {
         playerChoice = 'scissor'
-        $('#playerImage').attr('src', "/images/scissor.png");
+        $('#playerImage').attr('src', "/rock-paper-scissors/images/scissor.png");
     }
     //randomly choose response for computer
     computerChoose();
@@ -40,37 +40,38 @@ function computerChoose() {
     console.log(`Computer chooses`, computerChoice);
     //change computerImage
     if (computerChoice === 'rock') {
-        $('#computerImage').attr('src', "/images/rock.png");
+        $('#computerImage').attr('src', "/rock-paper-scissors/images/rock.png");
     } else if (computerChoice === 'paper') {
-        $('#computerImage').attr('src', "/images/paper.png");
+        $('#computerImage').attr('src', "/rock-paper-scissors/images/paper.png");
     } else if (computerChoice === 'scissor') {
-        $('#computerImage').attr('src', "/images/scissor.png");
+        $('#computerImage').attr('src', "/rock-paper-scissors/images/scissor.png");
     }
 }
 
 function whoWins(player, computer) {
+    let outcome = $('#outcome');
     //player chooses rock
     if (player === 'rock' && computer === 'rock') {
-        $('#outcome').text('Tied!').css('color', "yellow");
+        outcome.text('Tied!');
     } else if (player === 'rock' && computer === 'paper') {
-        $('#outcome').text('You Lose!').css('color', 'red');
+        outcome.text('You Lose!');
     } else if (player === 'rock' && computer === 'scissor') {
-        $('#outcome').text('You Win!').css('color', 'green');
+        outcome.text('You Win!');
     }
     //player chooses paper
     else if (player === 'paper' && computer === 'rock') {
-        $('#outcome').text('You Win!').css('color', 'green');
+        outcome.text('You Win!');
     } else if (player === 'paper' && computer === 'paper') {
-        $('#outcome').text('Tied!').css('color', "yellow");
+        outcome.text('Tied!');
     } else if (player === 'paper' && computer === 'scissor') {
-        $('#outcome').text('You Lose!').css('color', 'red');
+        outcome.text('You Lose!');
     }
     //player chooses scissor
     else if (player === 'scissor' && computer === 'rock') {
-        $('#outcome').text('You Lose!').css('color', 'red');
+        outcome.text('You Lose!');
     } else if (player === 'scissor' && computer === 'paper') {
-        $('#outcome').text('You Win!').css('color', 'green');
+        outcome.text('You Win!');
     } else if (player === 'scissor' && computer === 'scissor') {
-        $('#outcome').text('Tied!').css('color', "yellow");
+        outcome.text('Tied!');
     }
 }
