@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/zakirahsbold');
 
 body {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'ZakirahsBold', sans-serif;
     background: url('https://t4.ftcdn.net/jpg/02/58/59/33/360_F_258593399_SGYcrEVoy9onQt2ei65KtdbQlVHxwZFE.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,8 +34,8 @@ img {
 
 .center {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
 
 .column {
