@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css'
+        integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src='script.js' async></script>
-    <link rel='stylesheet' href='style.css'/>
-    <title>Rock, Paper, Scissors!</title>
+    <link rel='stylesheet' href='style.css' />
+    <title>Rock, Paper, Scissor!</title>
 </head>
+
 <body>
-    <h1>Rock, Paper, Scissors</h1>
-    <img id='human' src="" alt="">
-    <img id='computer' src="" alt="">
+    <div class="center column">
+        <h1>Rock, Paper, Scissors!</h1>
+        <h2 id="outcome">Who Will Win?</h2>
+    </div>
+    <div class="center row">
+        <div class="center column">
+            <h3 class="center player">You</h3>
+            <div class="center image-box">
+                <img id='user' src="/images/blank.png" alt="your choice of rock, paper, or scissors">
+            </div>
+        </div>
+        <div class="center column">
+            <img class="center" id='vs' src="/images/versus.png" alt="vs symbol">
+        </div>
+        <div class="center column">
+            <h3 class="center player">Computer</h3>
+            <div class="center image-box">
+                <img id='computer' src="/images/blank.png" alt="the computer's random choice">
+            </div>
+        </div>
+    </div>
+
+    <div class="center column">
+        <h3>Choose rock, paper, or scissors!</h3>
+        <div id="choices">
+            <button class='btn btn-lg btn-primary' id="rock">Rock 🪨</button>
+            <button class='btn btn-lg btn-primary' id="paper">Paper 💵</button>
+            <button class='btn btn-lg btn-primary' id="scissor">Scissor ✂️</button>
+        </div>
+    </div>
+
 </body>
+
 </html>
