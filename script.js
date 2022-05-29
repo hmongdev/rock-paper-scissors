@@ -16,13 +16,13 @@ function buttonChoose(button) {
     if (button.target.id === 'rock') {
         playerChoice = 'rock'
         //target and change images
-        $('#playerImage').attr('src', "../rock-paper-scissors/images/rock.png");
+        $('#playerImage').attr('src', "/rock-paper-scissors/images/rock.png");
     } else if (button.target.id === 'paper') {
         playerChoice = 'paper'
-        $('#playerImage').attr('src', "../rock-paper-scissors/images/paper.png");
+        $('#playerImage').attr('src', "/rock-paper-scissors/images/paper.png");
     } else if (button.target.id === 'scissor') {
         playerChoice = 'scissor'
-        $('#playerImage').attr('src', "../rock-paper-scissors/images/scissor.png");
+        $('#playerImage').attr('src', "/rock-paper-scissors/images/scissor.png");
     }
     //randomly choose response for computer
     computerChoose();
@@ -40,11 +40,11 @@ function computerChoose() {
     console.log(`Computer chooses`, computerChoice);
     //change computerImage
     if (computerChoice === 'rock') {
-        $('#computerImage').attr('src', "../rock-paper-scissors/images/rock.png");
+        $('#computerImage').attr('src', "/rock-paper-scissors/images/rock.png");
     } else if (computerChoice === 'paper') {
-        $('#computerImage').attr('src', "../rock-paper-scissors/images/paper.png");
+        $('#computerImage').attr('src', "/rock-paper-scissors/images/paper.png");
     } else if (computerChoice === 'scissor') {
-        $('#computerImage').attr('src', "../rock-paper-scissors/images/scissor.png");
+        $('#computerImage').attr('src', "/rock-paper-scissors/images/scissor.png");
     }
 }
 
