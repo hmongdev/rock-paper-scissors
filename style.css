@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-/* @media (max-width: 768px) {}
-
-@media (max-width: 1200px) {} */
+@media (max-width: 768px) {
+    #vs {
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        left: 37%;
+        bottom: -40%;
+        margin: 1rem;
+        z-index: 1;
+    }
+}
 
 * {
     font-family: 'Indie Flower', cursive;
@@ -78,19 +86,6 @@ html {
 #choices {
     justify-content: space-evenly;
     margin: 3rem;
-}
-
-#vs {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    left: 37%;
-    bottom: -40%;
-    margin: 1rem;
-    z-index: 1;
-}
-
-#main-content {
 }
 
 #instructions,
