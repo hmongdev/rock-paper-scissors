@@ -5,9 +5,6 @@
         width: 5rem;
         height: 5rem;
         position: absolute;
-        left: 37%;
-        bottom: -40%;
-        margin: 1rem;
         z-index: 1;
     }
 }
