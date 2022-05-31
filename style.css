@@ -1,6 +1,13 @@
 @import url('http://fonts.cdnfonts.com/css/zakirahsbold');
 
-@media (max-width: 480) {}
+@media (max-width: 480) {
+    .image-box {
+        margin: 1rem 3rem;
+        /* size of images */
+        width: 5rem;
+        height: 5rem;
+    }
+}
 
 @media (max-width: 768px) {}
 
@@ -45,8 +52,8 @@ img {
 .image-box {
     margin: 1rem 3rem;
     /* size of images */
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .player {
@@ -76,4 +83,15 @@ img {
     height: 5rem;
     position: relative;
     z-index: 1;
+}
+
+/* make sure the images are centered inside the div */
+#computerImage,
+#playerImage {
+    position: absolute;
+    left: 0;
+}
+
+.center.column {
+    min-width: fit-content;
 }
