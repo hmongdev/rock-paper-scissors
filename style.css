@@ -1,12 +1,8 @@
 @import url('http://fonts.cdnfonts.com/css/zakirahsbold');
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-}
-
-@media (max-width: 1200px) {
-
-}
+@media (max-width: 1200px) {}
 
 body {
     font-family: 'ZakirahsBold', sans-serif;
@@ -44,6 +40,7 @@ div {
     height: 5rem;
     position: relative;
 }
+
 /* make sure the images are centered inside the div */
 #computerImage,
 #playerImage {
@@ -95,7 +92,8 @@ div {
     margin: 5rem 0rem;
 }
 
-#instructions {
-    color: black;
-    -webkit-text-stroke: 2px white;
+#instructions,
+#outcome {
+    color: white;
+    -webkit-text-stroke: 2px black;
 }
