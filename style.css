@@ -1,11 +1,11 @@
-@import url('http://fonts.cdnfonts.com/css/zakirahsbold');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /* @media (max-width: 768px) {}
 
 @media (max-width: 1200px) {} */
 
 * {
-    font-family: 'ZakirahsBold', sans-serif;
+    font-family: 'Indie Flower', cursive;
 }
 
 body {
