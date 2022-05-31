@@ -5,7 +5,6 @@
 @media (max-width: 1200px) {} */
 
 body {
-    font-family: 'ZakirahsBold', sans-serif;
     background: url('https://t4.ftcdn.net/jpg/02/58/59/33/360_F_258593399_SGYcrEVoy9onQt2ei65KtdbQlVHxwZFE.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +21,7 @@ h1 {
 }
 
 html {
+    font-family: 'ZakirahsBold', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
