@@ -34,6 +34,7 @@ html {
 
 div {
     position: relative;
+    width: max-content;
 }
 
 .image-box {
