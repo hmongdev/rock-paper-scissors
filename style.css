@@ -32,11 +32,6 @@ html {
     padding: 0;
 }
 
-div {
-    position: relative;
-    width: max-content;
-}
-
 .image-box {
     margin: 1rem 3rem;
     /* size of images */
@@ -88,12 +83,14 @@ div {
 #vs {
     width: 5rem;
     height: 5rem;
-    position: relative;
+    position: absolute;
+    left: 37%;
+    bottom: -40%;
+    margin: 1rem;
     z-index: 1;
 }
 
 #main-content {
-    margin: 5rem 0rem;
 }
 
 #instructions,
