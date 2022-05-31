@@ -1,22 +1,39 @@
 @import url('http://fonts.cdnfonts.com/css/zakirahsbold');
 
+@media (max-width: 480) {
+
+    .image-box {
+        margin: 1rem 3rem;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1200px) {}
+
 body {
     font-family: 'ZakirahsBold', sans-serif;
     background: url('https://t4.ftcdn.net/jpg/02/58/59/33/360_F_258593399_SGYcrEVoy9onQt2ei65KtdbQlVHxwZFE.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
     height: 100vh;
     width: 100vw;
     color: #fff;
 }
 
 h1 {
-    font-size: 3rem;
     margin: 2rem;
+    font-size: 2rem;
+    color: red;
 }
 
 html {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -32,6 +49,13 @@ img {
     height: 100%;
 }
 
+.player {
+    margin: 0;
+    padding: 0;
+    width: 8rem;
+    height: 8rem;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -42,27 +66,14 @@ img {
     flex-direction: column;
 }
 
-.image-box {
-    border: 10px outset #e0e0e0;
-    margin: 1rem 3rem;
-    width: 10rem;
-    height: 10rem;
-}
-
-.player {
-    margin: 0;
-    padding: 0;
-}
-
 .row {
     flex-direction: row;
     position: relative;
 }
 
 #vs {
-    width: 10rem;
-    height: 10rem;
-    padding: 1rem;
-    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
     z-index: 1;
 }

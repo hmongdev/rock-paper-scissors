@@ -20,28 +20,31 @@
     </div>
     <div class="center row">
         <div class="center column">
-            <h3 class="center player">You</h3>
+            <h3 class="player">You</h3>
             <div class="center image-box">
-                <img id='playerImage' src="../rock-paper-scissors/images/blank.png" alt="your choice of rock, paper, or scissors">
+                <!-- ../rock-paper-scissors -->
+                <img id='playerImage' src="/images/blank.png" alt="your choice of rock, paper, or scissors">
             </div>
         </div>
-        <div class="center column">
-            <img class="center" id='vs' src="../rock-paper-scissors/images/versus.png" alt="vs symbol">
+        <div id='main-content' class="center column">
+            <img class="center" id='vs' src="/images/versus.png" alt="vs symbol">
         </div>
         <div class="center column">
-            <h3 class="center player">Computer</h3>
-            <div class="center image-box">
-                <img id='computerImage' src="../rock-paper-scissors/images/blank.png" alt="the computer's random choice">
+            <h3 class="player">Computer</h3>
+            <div class="image-box">
+                <img id='computerImage' src="/images/blank.png" alt="the computer's random choice">
             </div>
         </div>
     </div>
 
     <div class="center column">
-        <h3>Choose rock, paper, or scissors!</h3>
         <div id="choices">
             <button class='btn btn-lg btn-primary' value="rock" id="rock">Rock</button>
             <button class='btn btn-lg btn-primary' value="paper" id="paper">Paper</button>
             <button class='btn btn-lg btn-primary' value="scissor" id="scissor">Scissor</button>
+        </div>
+        <div class="instructions">
+            <h1>Choose rock, paper, or scissors</h1>
         </div>
     </div>
 </body>
