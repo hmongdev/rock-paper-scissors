@@ -1,17 +1,12 @@
 @import url('http://fonts.cdnfonts.com/css/zakirahsbold');
 
-@media (max-width: 480) {
-    .image-box {
-        margin: 1rem 3rem;
-        /* size of images */
-        width: 5rem;
-        height: 5rem;
-    }
+@media (max-width: 768px) {
+
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 1200px) {
 
-@media (max-width: 1200px) {}
+}
 
 body {
     font-family: 'ZakirahsBold', sans-serif;
@@ -40,13 +35,6 @@ html {
 
 div {
     position: relative;
-    margin: 1rem;
-}
-
-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }
 
 .image-box {
@@ -54,6 +42,15 @@ img {
     /* size of images */
     width: 5rem;
     height: 5rem;
+    position: relative;
+}
+/* make sure the images are centered inside the div */
+#computerImage,
+#playerImage {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
 }
 
 .player {
@@ -73,9 +70,18 @@ img {
     flex-direction: column;
 }
 
+.center.column {
+    min-width: fit-content;
+}
+
 .row {
     flex-direction: row;
     position: relative;
+}
+
+#choices {
+    justify-content: space-evenly;
+    margin: 3rem;
 }
 
 #vs {
@@ -85,13 +91,11 @@ img {
     z-index: 1;
 }
 
-/* make sure the images are centered inside the div */
-#computerImage,
-#playerImage {
-    position: absolute;
-    left: 0;
+#main-content {
+    margin: 5rem 0rem;
 }
 
-.center.column {
-    min-width: fit-content;
+#instructions {
+    color: black;
+    -webkit-text-stroke: 2px white;
 }
