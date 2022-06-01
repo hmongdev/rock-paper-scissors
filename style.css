@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 @media (max-width: 768px) {
-    #vs {
-        width: 5rem;
-        height: 5rem;
-        position: absolute;
-        z-index: 1;
-    }
+    
 }
 
 * {
     font-family: 'Indie Flower', cursive;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -25,16 +28,8 @@ body {
 
 h1 {
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: red;
-}
-
-html {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .image-box {
@@ -48,6 +43,7 @@ html {
 /* make sure the images are centered inside the div */
 #computerImage,
 #playerImage {
+    border: 1px solid green;
     position: absolute;
     left: 0;
     width: 100px;
@@ -80,9 +76,21 @@ html {
     position: relative;
 }
 
+#main-content {
+    position: relative;
+}
+
+#vs {
+    border: 1px solid green;
+    width: 3rem;
+    height: 3rem;
+    /* position: absolute;
+    left: 45%;
+    z-index: 1; */
+}
+
 #choices {
     justify-content: space-evenly;
-    margin: 3rem;
 }
 
 #instructions,
